@@ -24,9 +24,9 @@ pipeline {
                 sh 'mvn test'
             }
         }
-        stage('dock') {
+        stage('docker') {
             steps {
-                echo 'dock'
+                echo 'docker'
             }
         }
         stage('deploy') {
